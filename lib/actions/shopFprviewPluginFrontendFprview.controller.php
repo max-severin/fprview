@@ -1,6 +1,6 @@
 <?php
 
-class shopPmoreinfoPluginFrontendPmoreinfoController extends waJsonController {
+class shopFprviewPluginFrontendFprviewController extends waJsonController {
 
     public function execute() {
         $id = (int)waRequest::get('id');      
