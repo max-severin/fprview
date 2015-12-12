@@ -4,6 +4,6 @@ return array(
     'version' => '1.0.0',
     'frontend' => true,
     'handlers' => array(
-    	//
+        'frontend_head' => 'frontendHeader',
     ),
 );
