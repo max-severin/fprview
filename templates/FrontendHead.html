@@ -1,9 +1,22 @@
 <style type="text/css">
 	{include file="../css/fprview.css" inline}
+
+	.fprview-more-info {
+		background-color: #{$settings.button_background_color};
+		color: #{$settings.button_color};
+	}
+	.fprview-more-info:hover {
+		background-color: #{$settings.button_background_color_hover};
+		color: #{$settings.button_color_hover};
+	}
 </style>
 
+{$settings.button_style}
+
+{if $settings.fancybox_status === 'enable'}
 <link media="screen" type="text/css" href="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.css" rel="stylesheet">
 <script type="text/javascript" src="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.js"></script>
+{/if}
 
 <script type="text/javascript">
 	{include file="../js/fprview.frontend.js"}

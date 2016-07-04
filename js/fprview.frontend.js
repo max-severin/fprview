@@ -14,7 +14,7 @@ var fprviewFrontend = (function () { "use strict";
 	//------------------- BEGIN PUBLIC METHODS --------------------
 	initModule = function () {
 
-		$(document).on('click', '.more-info', function(event){
+		$(document).on('click', '.fprview-more-info', function(event){
 			event.preventDefault();
 
 	        $.fancybox({

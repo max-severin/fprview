@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="{$wa_url}wa-content/js/farbtastic/farbtastic.css" type="text/css" />
+<script type="text/javascript" src="{$wa_url}wa-content/js/farbtastic/farbtastic.js"></script>
+
+<style type="text/css">
+    .CodeMirror { border: 1px solid #eee; }
+
+    .s-colorpicker { display: none; margin: -210px 0 0 550px; position: absolute; }
+
+    #button-template-get-origin, #button-style-get-origin { color: #21a6de; float: right; }
+    #button-template-origin, #button-style-origin { display: none; }
+    #button-template-warning { float: left; color: rgb(255, 51, 51); }
+
+    .hint .CodeMirror { box-sizing: border-box; height: auto; }
+
+    .more-info-wrapper { 
+    	float: right;
+    }
+    .more-info-link { 
+    	background: gray none repeat scroll 0 0;
+	    border-radius: 2px;
+    	color: #fefefe!important;
+	    display: none;
+	    font-size: 1em;
+	    margin: 0 0 10px;
+	    padding: 10px;
+	    position: relative;
+	    text-align: center;
+    }
+    .more-info-link:hover { 
+    	color: #fefefe!important;
+    }
+    #more-info-review {
+    	background: rgb(51, 102, 255) none repeat scroll 0 0;
+    }
+    #more-info-plugins {
+    	background: rgb(255, 102, 51) none repeat scroll 0 0;
+    }
+    #more-info-support {
+    	background: rgb(1, 153, 102) none repeat scroll 0 0;
+    }
+</style>
+
+<script type="text/javascript">
+    {include file="../../../js/fprview.backend.settings.js"}
+</script>
+
+
+<!-- Предусмотреть разные версии сайтов en&ru !!! -->
+<div class="more-info-wrapper">
+	<a id="more-info-review" class="more-info-link" href="//www.webasyst.ru/store/plugin/shop/fprview/reviews/" target="_blank">Оставить <b>отзыв</b></a>
+	<a id="more-info-plugins" class="more-info-link" href="//www.webasyst.ru/store/vendor/1020720/" target="_blank">Другие <b>плагины</b><br /> от разработчика</a>
+	<a id="more-info-support" class="more-info-link" href="mailto:makc.severin@gmail.com">По всем вопросам:<br /><b>makc.severin@gmail.com</b></a>
+</div>
+
+<h1>Быстрый</h1>
+
+<div class="fields form">
+    <form action="?module=plugins&id=fprview&action=save" method="post" id="plugins-settings-form" enctype="multipart/form-data" target="plugins-settings-iframe">
+        {$wa->csrf()}
+        {foreach $settings_controls as $name => $control}
+        <div class="field">
+            {$control}
+        </div>
+        {/foreach}
+
+        <div class="field">
+            <div class="value submit">
+                <input type="submit" class="button green" value="{_w('Save')}">
+                <span id="plugins-settings-form-status" style="display:none"><!-- message placeholder --></span>
+            </div>
+        </div>
+
+    </form>
+    <iframe style="display:none" name="plugins-settings-iframe" id="plugins-settings-iframe"></iframe>
+</div>
+
+<script type="text/javascript">
+    (function ($) {
+        fprviewBackendSettings.initModule();
+    })(jQuery);
+</script>
