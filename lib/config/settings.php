@@ -53,56 +53,6 @@ return array(
         'control_type' => waHtmlControl::INPUT,
     ),
 
-    'button_hide' => array(
-        'title'        => _wp('Preview button hide'),
-        'description'  => _wp('If you want to have the preview button visible only when you hover the mouse over the product and for all the others remained hidden, enable this setting. Otherwise, the button is displayed for all products.'),
-        'value'        => 'off',
-        'control_type' => waHtmlControl::SELECT,
-        'options'      => array(
-            'off' => _wp('Off'),
-            'on'  => _wp('On'),
-        ),
-    ),
-    'button_color' => array(
-        'title'        => _wp('Preview button text color'),
-        'class'        => 's-color',
-        'value'        => 'ffffff',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-    'button_background_color' => array(
-        'title'        => _wp('Preview button background color'),
-        'class'        => 's-color',
-        'value'        => '21a6de',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-    'button_color_hover' => array(
-        'title'        => _wp('Preview button text color on mouse hover'),
-        'class'        => 's-color',
-        'value'        => 'dddddd',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-    'button_background_color_hover' => array(
-        'title'        => _wp('Preview button background color on mouse hover'),
-        'class'        => 's-color',
-        'value'        => '1196ce',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-
-    'custom_template_color' => array(
-        'title'        => _wp('Text color in plugin custom template'),
-        'description'  => _wp('Text color in the header and footer.'),
-        'class'        => 's-color',
-        'value'        => 'ffffff',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-    'custom_template_background_color' => array(
-        'title'        => _wp('Background color in plugin custom template'),
-        'description'  => _wp('Background color of the header and footer, color of content borders and product link.'),
-        'class'        => 's-color',
-        'value'        => '21a6de',
-        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
-    ),
-
     'button_template' => array(
         'title'        => _wp('Preview button template'),
         'description'  => '<a id="button-template-get-origin" href="#">'. _wp('Template source code') .'</a>
@@ -157,5 +107,55 @@ return array(
 }
 </style>',
         'control_type' => waHtmlControl::TEXTAREA,
+    ),
+
+    'button_hide' => array(
+        'title'        => _wp('Preview button hide'),
+        'description'  => _wp('If you want to have the preview button visible only when you hover the mouse over the product and for all the others remained hidden, enable this setting. Otherwise, the button is displayed for all products.'),
+        'value'        => 'off',
+        'control_type' => waHtmlControl::SELECT,
+        'options'      => array(
+            'off' => _wp('Off'),
+            'on'  => _wp('On'),
+        ),
+    ),
+    'button_color' => array(
+        'title'        => _wp('Preview button text color'),
+        'class'        => 's-color',
+        'value'        => 'ffffff',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+    'button_background_color' => array(
+        'title'        => _wp('Preview button background color'),
+        'class'        => 's-color',
+        'value'        => '21a6de',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+    'button_color_hover' => array(
+        'title'        => _wp('Preview button text color on mouse hover'),
+        'class'        => 's-color',
+        'value'        => 'dddddd',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+    'button_background_color_hover' => array(
+        'title'        => _wp('Preview button background color on mouse hover'),
+        'class'        => 's-color',
+        'value'        => '1196ce',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+
+    'custom_template_color' => array(
+        'title'        => _wp('Text color in plugin custom template'),
+        'description'  => _wp('Text color in the header and footer.'),
+        'class'        => 's-color',
+        'value'        => 'ffffff',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+    'custom_template_background_color' => array(
+        'title'        => _wp('Background color in plugin custom template'),
+        'description'  => _wp('Background color of the header and footer, color of content borders and product link.'),
+        'class'        => 's-color',
+        'value'        => '21a6de',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
     ),
 );

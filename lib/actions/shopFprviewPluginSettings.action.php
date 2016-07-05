@@ -20,6 +20,7 @@ class shopFprviewPluginSettingsAction extends waViewAction {
         $settings = $plugin->getSettings();
         $settings_controls = $plugin->getControls($params);
 
+        $this->view->assign('fprview_settings', $settings);
         $this->view->assign('settings_controls', $settings_controls);
     }
 
