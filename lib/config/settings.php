@@ -23,6 +23,16 @@ return array(
             'disable' => _wp('Disable'),
         ),
     ),
+    'bxslider_status' => array(
+        'title'        => _wp('bxslider status'),
+        'description'  => _wp('If the bxslider library is already loaded in your template disable this setting'),
+        'value'        => 'enable',
+        'control_type' => waHtmlControl::SELECT,
+        'options'      => array(
+            'enable'  => _wp('Enable'),
+            'disable' => _wp('Disable'),
+        ),
+    ),
     'template_type' => array(
         'title'        => _wp('Template type'),
         'value'        => 'plugin',
