@@ -1,7 +1,6 @@
 <?php
 return array(
-    'name' => 'Быстрый просмотр товара',
-    'description' => /*_wp*/('BLABLABLA'),
+    'name' => /*_wp*/('Fast product preview'),
     'img' => 'img/fprview.png',
     'vendor' => 1020720,
     'version' => '1.0.0',
