@@ -13,6 +13,15 @@
 
 {$settings.button_style}
 
+{if isset($fprview_settings.button_hide) && $fprview_settings.button_hide === 'on'}
+<style type="text/css">
+	a.fprview-more-info {
+		display: none;
+    	transition: all 0.2s ease-in 0s;
+	}
+</style>
+{/if}
+
 {if $settings.fancybox_status === 'enable'}
 <link media="screen" type="text/css" href="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.css" rel="stylesheet">
 <script type="text/javascript" src="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.js"></script>
@@ -27,7 +36,7 @@
 </script>
 
 <script type="text/javascript">
-	(function ($) {
+	$(document).ready(function () {
 	    fprviewFrontend.initModule();
-	})(jQuery);
+	});
 </script>

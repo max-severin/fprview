@@ -18,7 +18,7 @@ class shopFprviewPlugin extends shopPlugin {
         if ( isset($settings['status']) && $settings['status'] === 'on' ) {            
 
             $view = wa()->getView();
-            $view->assign('settings', $settings);
+            $view->assign('fprview_settings', $settings);
 
             $button_style = $view->fetch('string:' . $settings['button_style']);
 

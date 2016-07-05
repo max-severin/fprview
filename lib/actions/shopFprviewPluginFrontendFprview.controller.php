@@ -31,11 +31,10 @@ class shopFprviewPluginFrontendFprviewController extends shopFrontendAction {
             case 'plugin':
 
                 $view = wa()->getView();
-                
+
                 $view->assign('features', $features);
                 $view->assign('product', $product);
-
-                $view->assign('settings', $settings);
+                
                 $view->assign('theme_path', $theme_path);
 
                 $html = $view->fetch(realpath(dirname(__FILE__)."/../../").'/templates/Frontend.html');

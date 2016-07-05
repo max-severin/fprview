@@ -49,6 +49,16 @@ return array(
         'value'        => 'product.html',
         'control_type' => waHtmlControl::INPUT,
     ),
+    'button_hide' => array(
+        'title'        => _wp('button_hide'),
+        'description'  => _wp('button_hide'),
+        'value'        => 'off',
+        'control_type' => waHtmlControl::SELECT,
+        'options'      => array(
+            'off' => _wp('Off'),
+            'on'  => _wp('On'),
+        ),
+    ),
     'button_color' => array(
         'title'        => _wp('button_color'),
         'class'        => 's-color',
