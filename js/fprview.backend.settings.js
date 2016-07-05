@@ -71,7 +71,9 @@ var fprviewBackendSettings = (function () { "use strict";
             '#fprview_shop_fprview_button_color',
             '#fprview_shop_fprview_button_background_color',
             '#fprview_shop_fprview_button_color_hover',
-            '#fprview_shop_fprview_button_background_color_hover'
+            '#fprview_shop_fprview_button_background_color_hover',
+            '#fprview_shop_fprview_custom_template_color',
+            '#fprview_shop_fprview_custom_template_background_color'
         ];
 
         initColorPicker( color_elements, setColorPicker );

@@ -73,6 +73,18 @@ return array(
         'value'        => '1196ce',
         'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
     ),
+    'custom_template_color' => array(
+        'title'        => _wp('custom_template_color'),
+        'class'        => 's-color',
+        'value'        => 'ffffff',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
+    'custom_template_background_color' => array(
+        'title'        => _wp('custom_template_background_color'),
+        'class'        => 's-color',
+        'value'        => '21a6de',
+        'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
+    ),
     'button_template' => array(
         'title'        => _wp('View button template'),
         'description'  => '<a id="button-template-get-origin" href="#">Исходный код шаблона</a>
