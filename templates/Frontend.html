@@ -1,88 +1,100 @@
-{if true}
-	
-	<style type="text/css">
-		{include file="../css/fprview.css" inline}
-	</style>
+<div class="fprview-wrapper">
+    <div class="fprview-top">
+        <h1 class="product-name" itemprop="name">
+            {$product.name|escape} <small></small>
+        </h1>
 
-	<div class="fprview-wrapper">
-		<div class="fprview-left">
-			<div class="product-images ">
-				<ul class="bxslider">
-	  				<li>
-	                    {$wa->shop->productImgHtml($product, '300x300', [ 'itemprop' => 'image', 'id' => 'product-image', 'alt' => $product.name|escape|cat:' ':strip_tags($product.summary)|escape ])}
-	                </li>
-					{if count($product.images) > 1}
-	                    {foreach $product.images as $image}
-	                    	{if $image.id != $product.image_id}
-		                        <li>
-		                        	{$wa->shop->productImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext, 'image_desc' => $image.description], '300x300', ['alt' => $product.name|cat:' - ':$image.description|escape])}
-		                        </li>
-	                        {/if}
-	                    {/foreach}
-	            	{/if}
-	            </ul>
-	        </div>
+        {$sku = $product.skus[$product.sku_id]}
 
-			<span class="product-link">Крупное фото в <a href="{$product.frontend_url}">карте товара</a></span>
-		</div>
-		<div class="fprview-right">
-			<h1 class="product-name" itemprop="name">
-        		{$product.name|escape}
-    		</h1>
-			<div class="product-info-tabs">
-                {if $product.features}
-                    <div class="product-info-tab active">
-                        <span>Характеристики</span>
-                    </div>   
-                {/if}           
-                {if $product.description}
-                    <div class="product-info-tab">
-                        <span>Описание</span>
-                    </div>                    
-                {/if}
-            </div>
+        {if $sku.sku}<span class="hint" itemprop="name">{$sku.sku|escape}</span>{/if}
+    </div>
 
-            <div class="product-info-blocks">   
-                <!-- product features -->
-                {if $product.features}
-                    <div class="product-info-block active">
-                        <table class="features" id="product-features">
-                            {foreach $product.features as $f_code => $f_value}
-                                <tr {if $features[$f_code].type == 'divider'}class="divider"{/if}>
-                                    <td class="name">
-                                        <strong>{$features[$f_code].name|escape}</strong>
-                                    </td>
-                                    <td class="value" itemprop="{$f_code|escape}">
-                                        {if is_array($f_value)}
-                                            {if $features[$f_code].type == 'color'}
-                                                {implode('<br /> ', $f_value)}
-                                            {else}
-                                                {implode(', ', $f_value)}
-                                            {/if}
-                                        {else}
-                                            {$f_value}
-                                        {/if}
-                                    </td>
-                                </tr>
-                            {/foreach}
-                        </table>
-                    </div>
-                {/if}             
-                {if $product.description}
-                    <div class="product-info-block">     
-                        <div class="description" id="product-description" itemprop="description">{$product.description}</div>
-                    </div>
-                {/if}
-            </div>
-		</div>
-		<div class="fprview-bottom">
-			{if $product.compare_price > 0}<span class="compare-price">{shop_currency_html($product.compare_price)}</span>{/if}
-            <span class="price">{shop_currency_html($product.price)}</span>
-            <a href="{$product.frontend_url}" class="product-link">Перейти к товару</a>
-		</div>
+	<div class="fprview-left">
+		<div class="product-images">
+			<ul class="bxslider">
+  				<li>
+                    {$wa->shop->productImgHtml($product, '300x300', [ 'itemprop' => 'image', 'id' => 'product-image', 'alt' => $product.name|escape|cat:' ':strip_tags($product.summary)|escape ])}
+                </li>
+				{if count($product.images) > 1}
+                    {foreach $product.images as $image}
+                    	{if $image.id != $product.image_id}
+	                        <li>
+	                        	{$wa->shop->productImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext, 'image_desc' => $image.description], '300x300', ['alt' => $product.name|cat:' - ':$image.description|escape])}
+	                        </li>
+                        {/if}
+                    {/foreach}
+            	{/if}
+            </ul>
+        </div>
+
+		<span class="product-link">Крупное фото в <a href="{$product.frontend_url}">карте товара</a></span>
 	</div>
-		
-{/if}
+
+	<div class="fprview-right">
+
+		<div class="product-info-tabs">
+            {if $product.features}
+                <div class="product-info-tab active">
+                    Характеристики
+                </div>   
+            {/if}           
+            {if $product.description}
+                <div class="product-info-tab">
+                    Описание
+                </div>                    
+            {/if}
+        </div>
+
+        <div class="product-info-blocks">   
+            <!-- product features -->
+            {if $product.features}
+                <div class="product-info-block active">
+                    <table class="features" id="product-features">
+                        {foreach $product.features as $f_code => $f_value}
+                            <tr {if $features[$f_code].type == 'divider'}class="divider"{/if}>
+                                <td class="name">
+                                    <strong>{$features[$f_code].name|escape}</strong>
+                                </td>
+                                <td class="value" itemprop="{$f_code|escape}">
+                                    {if is_array($f_value)}
+                                        {if $features[$f_code].type == 'color'}
+                                            {implode('<br /> ', $f_value)}
+                                        {else}
+                                            {implode(', ', $f_value)}
+                                        {/if}
+                                    {else}
+                                        {$f_value}
+                                    {/if}
+                                </td>
+                            </tr>
+                        {/foreach}
+                    </table>
+                </div>
+            {/if}             
+            {if $product.description}
+                <div class="product-info-block">     
+                    <div class="description" id="product-description" itemprop="description">{$product.description}</div>
+                </div>
+            {/if}
+        </div>
+
+	</div>
+
+	<div class="fprview-bottom">
+
+        <div class="fprview-left">
+            <div class="fprview-price-wrapper">
+                <div class="inline-block">
+            		{if $product.compare_price > 0}<span class="compare-price">{shop_currency_html($product.compare_price)}</span>{/if}
+                    <span class="price">{shop_currency_html($product.price)}</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="{$product.frontend_url}" class="product-link">Перейти к товару</a>
+
+	</div>
+</div>
 
 <script>
 	$(document).ready(function(){
