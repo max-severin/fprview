@@ -154,10 +154,11 @@ var fprviewBackendSettings = (function () { "use strict";
             }
         });
 
-        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror, .CodeMirror-scroll').css('height', '65px');
+        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror').css('height', '95px');
+        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror-scroll').css('height', '65px');
         
 
-        $('.more-info-link').css({
+        $('.plugin-links a').css({
             'display': 'block',
             'top': '-500px'
         }).animate({

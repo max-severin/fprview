@@ -2,76 +2,43 @@
 <script type="text/javascript" src="{$wa_url}wa-content/js/farbtastic/farbtastic.js"></script>
 
 <style type="text/css">
-    .fields.form {
-        box-sizing: border-box;
-        min-width: 1024px;
-        padding: 0 220px 0 0;
-        width: 100%;
-    }
-    .field .value input[type="text"] {
-        width: 190px;
-    }
+    .fields.form { width: 100%; }
+    .field .value input[type="text"] { width: 190px; }
 
-
+    .helper-tip { padding: 0 250px 0 0; word-wrap: break-word; }
 
     .CodeMirror { border: 1px solid #eee; }
+    .CodeMirror-scroll { margin: 10px 0 0; width: 100%; }
 
-    .s-colorpicker { display: none; margin: -110px 0 0 245px; position: absolute; }
+    .s-colorpicker { display: none; margin: -135px 0 0 245px; position: absolute; }
 
-    #button-template-get-origin, #button-style-get-origin { 
-        border-bottom: 1px dotted #21a6de;
-        color: #21a6de;
-        float: right;
-        text-decoration: none !important;
-    }
+    #button-template-get-origin, #button-style-get-origin { border-bottom: 1px dotted #21a6de; color: #21a6de; float: right; text-decoration: none !important; }
     #button-template-origin, #button-style-origin { display: none; }
-    #button-template-warning { float: left; color: rgb(255, 51, 51); }
+    #button-template-warning { float: left; color: rgb(255, 51, 51); width: 60%; }
 
     .hint .CodeMirror { box-sizing: border-box; height: auto; }
 
-    .more-info-wrapper { 
-    	margin: 0 20px 0 0;
-        position: absolute;
-        right: 0;
-    }
-    .more-info-link { 
-    	background: gray none repeat scroll 0 0;
-	    border-radius: 2px;
-    	color: #fefefe!important;
-	    display: none;
-	    font-size: 1em;
-	    margin: 0 0 10px;
-	    padding: 10px;
-	    position: relative;
-	    text-align: center;
-    }
-    .more-info-link:hover { 
-    	color: #fefefe!important;
-    }
-    #more-info-review {
-    	background: rgb(51, 102, 255) none repeat scroll 0 0;
-    }
-    #more-info-plugins {
-    	background: rgb(255, 102, 51) none repeat scroll 0 0;
-    }
-    #more-info-support {
-    	background: rgb(1, 153, 102) none repeat scroll 0 0;
-    }
+    .plugin-links { margin: 0 20px; position: absolute; right: 0; }
+    .plugin-links a { background: gray none repeat scroll 0 0; border-radius: 2px; color: #fefefe!important; display: none; font-size: 1em; margin: 0 0 10px; padding: 10px; position: relative; text-align: center; }
+    .plugin-links a:hover { color: #fefefe!important; }
+    #more-info-review { background: rgb(51, 102, 255) none repeat scroll 0 0; }
+    #more-info-plugins { background: rgb(255, 102, 51) none repeat scroll 0 0; }
+    #more-info-support { background: rgb(1, 153, 102) none repeat scroll 0 0; }
 </style>
 
 <script type="text/javascript">
     {include file="../../../js/fprview.backend.settings.js"}
 </script>
 
-<div class="more-info-wrapper">
-	<a id="more-info-review" class="more-info-link" href="[`//www.webasyst.com`]/store/plugin/shop/fprview/reviews/" target="_blank">[`Give <b>feedback</b>`]</a>
-	<a id="more-info-plugins" class="more-info-link" href="[`//www.webasyst.com`]/store/vendor/1020720/" target="_blank">[`Other <b>plugins</b><br /> from the developer`]</a>
-	<a id="more-info-support" class="more-info-link" href="mailto:makc.severin@gmail.com">[`For all questions`]:<br /><b>makc.severin@gmail.com</b></a>
+<div class="plugin-links">
+	<a id="more-info-review" href="[`//www.webasyst.com`]/store/plugin/shop/fprview/reviews/" target="_blank">[`Give <b>feedback</b>`]</a>
+	<a id="more-info-plugins" href="[`//www.webasyst.com`]/store/vendor/1020720/" target="_blank">[`Other <b>plugins</b><br /> from the developer`]</a>
+	<a id="more-info-support" href="mailto:makc.severin@gmail.com">[`For all questions`]:<br /><b>makc.severin@gmail.com</b></a>
 </div>
 
 <h1>[`Fast product preview`]</h1>
 
-<p>
+<p class="helper-tip">
     [`To output the «Fast Preview» link in shop frontend paste in the product template the following code`]:<br />
     <b>&#123;shopFprviewPlugin::displayButton($product.id)&#125;</b> - [`as a method parameter it is necessary to specify the product id`].
 </p>
