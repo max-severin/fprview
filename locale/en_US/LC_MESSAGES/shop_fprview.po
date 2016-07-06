@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shop/plugins/fprview\n"
-"POT-Creation-Date: 2016-07-05 09:43+0300\n"
+"POT-Creation-Date: 2016-07-06 09:35+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: shop/plugins/fprview\n"
 "Language-Team: shop/plugins/fprview\n"
@@ -34,26 +34,36 @@ msgstr ""
 msgid "To the product"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:48
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:49
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:67
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:68
 msgid "//www.webasyst.com"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:48
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:67
 msgid "Give <b>feedback</b>"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:49
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:68
 msgid "Other <b>plugins</b><br /> from the developer"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:50
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:69
 msgid "For all questions"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:53
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:72
 #: /wa-apps/shop/plugins/fprview/lib/config/plugin.php:3
 msgid "Fast product preview"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:75
+msgid ""
+"To output the «Fast Preview» link in shop frontend paste in the product "
+"template the following code"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:76
+msgid "as a method parameter it is necessary to specify the product id"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:8
@@ -61,12 +71,12 @@ msgid "Status"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:12
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:62
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:118
 msgid "Off"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:13
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:63
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
 msgid "On"
 msgstr ""
 
@@ -128,72 +138,72 @@ msgid "If you chose «Theme standard template» fill the file name."
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:57
-msgid "Preview button hide"
+msgid "Preview button template"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:58
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:70
+msgid "Template source code"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:59
+msgid "Warning"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:59
+msgid "the link must have an attribute"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:62
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:64
+msgid "Fast Preview"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:69
+msgid "Preview button style"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:113
+msgid "Preview button hide"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:114
 msgid ""
 "If you want to have the preview button visible only when you hover the mouse "
 "over the product and for all the others remained hidden, enable this "
 "setting. Otherwise, the button is displayed for all products."
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:67
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:123
 msgid "Preview button text color"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:73
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:129
 msgid "Preview button background color"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:79
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:135
 msgid "Preview button text color on mouse hover"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:85
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:141
 msgid "Preview button background color on mouse hover"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:92
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
 msgid "Text color in plugin custom template"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:93
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:149
 msgid "Text color in the header and footer."
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:99
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:155
 msgid "Background color in plugin custom template"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:100
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:156
 msgid ""
 "Background color of the header and footer, color of content borders and "
 "product link."
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:107
-msgid "Preview button template"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:108
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:120
-msgid "Template source code"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:109
-msgid "Warning"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:109
-msgid "the link must have an attribute"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:112
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:114
-msgid "Fast Preview"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
-msgid "Preview button style"
 msgstr ""

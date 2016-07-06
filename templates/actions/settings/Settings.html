@@ -71,6 +71,11 @@
 
 <h1>[`Fast product preview`]</h1>
 
+<p>
+    [`To output the «Fast Preview» link in shop frontend paste in the product template the following code`]:<br />
+    <b>&#123;shopFprviewPlugin::displayButton($product.id)&#125;</b> - [`as a method parameter it is necessary to specify the product id`].
+</p>
+
 <div class="fields form">
     <form action="?module=plugins&id=fprview&action=save" method="post" id="plugins-settings-form" enctype="multipart/form-data" target="plugins-settings-iframe">
         {$wa->csrf()}

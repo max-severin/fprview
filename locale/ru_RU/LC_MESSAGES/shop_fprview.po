@@ -58,6 +58,18 @@ msgstr "По всем вопросам"
 msgid "Fast product preview"
 msgstr "Быстрый просмотр товара"
 
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:75
+msgid ""
+"To output the «Fast Preview» link in shop frontend paste in the product "
+"template the following code"
+msgstr ""
+"Для вывода ссылки «Быстрый просмотр» во фронтенде магазина вставьте в "
+"необходимое место шаблона следующий код"
+
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:76
+msgid "as a method parameter it is necessary to specify the product id"
+msgstr "в качестве параметра метода обязательно нужно указать id товара"
+
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:8
 msgid "Status"
 msgstr "Статус"
