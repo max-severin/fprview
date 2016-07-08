@@ -135,6 +135,9 @@ var fprviewBackendSettings = (function () { "use strict";
             return false;
         });
 
+        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror').css('height', '95px');
+        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror-scroll').css('height', '65px');
+
         if ($('#fprview_shop_fprview_template_type').val() == 'plugin') {
             $('#fprview_shop_fprview_template_theme_file').closest('.field').hide();
             $('#fprview_shop_fprview_custom_template_color, #fprview_shop_fprview_custom_template_background_color').closest('.field').show();
@@ -153,9 +156,6 @@ var fprviewBackendSettings = (function () { "use strict";
                 $('#fprview_shop_fprview_custom_template_color, #fprview_shop_fprview_custom_template_background_color').closest('.field').hide();
             }
         });
-
-        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror').css('height', '95px');
-        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror-scroll').css('height', '65px');
         
 
         $('.plugin-links a').css({

@@ -2,16 +2,16 @@
 	{include file="../css/fprview.css" inline}
 
 	.fprview-more-info {
-		background-color: #{$settings.button_background_color};
-		color: #{$settings.button_color};
+		background-color: #{$fprview_settings.button_background_color};
+		color: #{$fprview_settings.button_color};
 	}
 	.fprview-more-info:hover {
-		background-color: #{$settings.button_background_color_hover};
-		color: #{$settings.button_color_hover};
+		background-color: #{$fprview_settings.button_background_color_hover};
+		color: #{$fprview_settings.button_color_hover};
 	}
 </style>
 
-{$settings.button_style}
+{$fprview_settings.button_style}
 
 {if isset($fprview_settings.button_hide) && $fprview_settings.button_hide === 'on'}
 <style type="text/css">
@@ -22,12 +22,12 @@
 </style>
 {/if}
 
-{if $settings.fancybox_status === 'enable'}
+{if $fprview_settings.fancybox_status === 'enable'}
 <link media="screen" type="text/css" href="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.css" rel="stylesheet">
 <script type="text/javascript" src="{$wa_url}wa-apps/shop/plugins/fprview/util/fancybox/jquery.fancybox.js"></script>
 {/if}
 
-{if $settings.bxslider_status === 'enable'}
+{if $fprview_settings.bxslider_status === 'enable'}
 <script type="text/javascript" src="{$wa_url}wa-apps/shop/plugins/fprview/util/bxslider/jquery.bxslider.min.js"></script>
 {/if}
 

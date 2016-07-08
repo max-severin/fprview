@@ -12,7 +12,7 @@ class shopFprviewPlugin extends shopPlugin {
      * Handler for frontend_head event: add fprviewFrontend module in frontend head section
      * @return string
      */
-    public function frontendHeader() {
+    public function frontendHead() {
         $settings = $this->getSettings();
 
         if ( isset($settings['status']) && $settings['status'] === 'on' ) {            

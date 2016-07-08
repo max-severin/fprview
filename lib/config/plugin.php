@@ -7,6 +7,6 @@ return array(
     'shop_settings' => true,
     'frontend' => true,
     'handlers' => array(
-        'frontend_head' => 'frontendHeader',
+        'frontend_head' => 'frontendHead',
     ),
 );
