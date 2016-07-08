@@ -1,7 +1,8 @@
 .fprview-wrapper {
     background: #FFF;
 	float: left;
-	width: 780px;
+    /*max-width: 80%;
+	min-width: 780px;*/
 }
 
 .inline-block {
@@ -112,7 +113,7 @@
 	color: #{$fprview_settings.custom_template_color};
     float: left;
     font-size: 18px;
-    margin: 8px 0 0 0;
+    margin: -8px 0 0 0;
     text-decoration: line-through;
 }
 .fprview-bottom .price {

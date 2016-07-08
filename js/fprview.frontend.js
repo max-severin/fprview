@@ -18,10 +18,11 @@ var fprviewFrontend = (function () { "use strict";
 			event.preventDefault();
 
 	        $.fancybox({
-	            width: '50%',
-	            height: '50%',
-	            href: $(this).attr('href'),
-	            type: 'ajax'
+	            type     : 'ajax',
+	            href     : $(this).attr('href'),
+	        	autoSize : false,
+			    width    : "60%",
+			    height   : "auto"
 	        });
 
 	        {if isset($fprview_settings.button_hide) && $fprview_settings.button_hide === 'on'}
