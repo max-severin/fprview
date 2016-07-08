@@ -35,7 +35,7 @@ class shopFprviewPluginFrontendFprviewController extends shopFrontendAction {
                 $view->assign('features', $features);
                 $view->assign('product', $product);
                 
-                $view->assign('theme_path', $theme_path);
+                $view->assign('fprview_settings', $settings);
 
                 $html = $view->fetch(realpath(dirname(__FILE__)."/../../").'/templates/Frontend.html');
 

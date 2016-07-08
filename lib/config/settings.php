@@ -144,6 +144,16 @@ return array(
         'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
     ),
 
+    'custom_template_target_blank' => array(
+        'title'        => _wp('Links in new tab'),
+        'description'  => _wp('Enable this setting if you want to open product links in a new browser tab.'),
+        'value'        => 'on',
+        'control_type' => waHtmlControl::SELECT,
+        'options'      => array(
+            'off' => _wp('Off'),
+            'on'  => _wp('On'),
+        ),
+    ),
     'custom_template_color' => array(
         'title'        => _wp('Text color in plugin custom template'),
         'description'  => _wp('Text color in the header and footer.'),

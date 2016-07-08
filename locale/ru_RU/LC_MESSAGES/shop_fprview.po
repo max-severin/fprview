@@ -223,3 +223,14 @@ msgstr "Быстрый просмотр"
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
 msgid "Preview button style"
 msgstr "Стили кнопки предпросмотра"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
+msgid "Links in new tab"
+msgstr "Ссылки в новой вкладке"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:149
+msgid ""
+"Enable this setting if you want to open product links in a new browser tab."
+msgstr ""
+"Включите эту настройку, если хотите, чтобы ссылки на товар открывались в "
+"новой вкладке браузера."

@@ -207,3 +207,12 @@ msgid ""
 "Background color of the header and footer, color of content borders and "
 "product link."
 msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
+msgid "Links in new tab"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:149
+msgid ""
+"Enable this setting if you want to open product links in a new browser tab."
+msgstr ""

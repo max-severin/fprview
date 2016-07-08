@@ -33,7 +33,7 @@
             </ul>
         </div>
 
-		<span class="product-link">[`Large photo on`] <a href="{$product.frontend_url}">[`the product page`]</a></span>
+		<span class="product-link">[`Large photo on`] <a href="{$product.frontend_url}" {if $fprview_settings.custom_template_target_blank == 'on'}target="_blank"{/if}>[`the product page`]</a></span>
 	</div>
 
 	<div class="fprview-right">
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <a href="{$product.frontend_url}" class="product-link">[`To the product`]</a>
+        <a href="{$product.frontend_url}" class="product-link" {if $fprview_settings.custom_template_target_blank == 'on'}target="_blank"{/if}>[`To the product`]</a>
 
 	</div>
 </div>
