@@ -135,7 +135,7 @@ var fprviewBackendSettings = (function () { "use strict";
             return false;
         });
 
-        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror').css('height', '95px');
+        $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror').css({ 'margin-top': '40px', 'height': '95px' });
         $('#fprview_shop_fprview_button_template').closest('.field').find('.CodeMirror-scroll').css('height', '65px');
 
         if ($('#fprview_shop_fprview_template_type').val() == 'plugin') {
