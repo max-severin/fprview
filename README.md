@@ -1,6 +1,6 @@
 # fprview - Fast product view
 
-![fprview-frontend](#)
+![fprview-frontend](https://www.webasyst.com/wa-data/public/baza/products/img/16/2516/6939.970.png)
 
 ## Description
 Fast product view plugin for Shop-Script
@@ -30,6 +30,6 @@ You need to edit the template that generates the product lists. In the basic the
 
 		{shopFprviewPlugin::displayButton($p.id)}
 
-![fprview-list-thumbs](#)
+![fprview-list-thumbs](https://www.webasyst.com/wa-data/public/baza/products/img/16/2516/6942.970.png)
 
 *The pictures show the principle and the approximate location of the calling plugin can be added to template files of basic design theme Custom. In other themes the plugin is installed the same way.*
