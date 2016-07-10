@@ -59,9 +59,9 @@ return array(
 <p id="button-template-warning"><b>'. _wp('Warning') .'</b>: '. _wp('the link must have attributes') .':<br /><b>href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}"</b><br /><b>class="fprview-more-info"</b></p>
 <br /><br />
 <p id="button-template-origin">
-&#060;a href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info"&#062;'. _wp('Fast Preview') .'&#060;/a&#062;
+&#060;button href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info"&#062;'. _wp('Fast Preview') .'&#060;/button&#062;
 </p>',
-        'value'        => '<a href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info">'. _wp('Fast Preview') .'</a>',
+        'value'        => '<button href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info">'. _wp('Fast Preview') .'</button>',
         'control_type' => waHtmlControl::TEXTAREA,
     ),
 
