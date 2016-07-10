@@ -71,7 +71,9 @@ return array(
 <p id="button-style-origin">
 &#060;style&#062;
   .fprview-more-info {
+    border: 0 none;
     border-radius: 2px;
+    cursor: pointer;
     display: block;
     font-size: 1.1em;
     font-weight: normal;
@@ -90,7 +92,9 @@ return array(
 </p>',
         'value'        => '<style>
 .fprview-more-info {
+    border: 0 none;
     border-radius: 2px;
+    cursor: pointer;
     display: block;
     font-size: 1.1em;
     font-weight: normal;
