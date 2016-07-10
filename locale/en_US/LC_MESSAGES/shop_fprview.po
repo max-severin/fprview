@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shop/plugins/fprview\n"
-"POT-Creation-Date: 2016-07-06 09:35+0300\n"
+"POT-Creation-Date: 2016-07-10 15:34+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: shop/plugins/fprview\n"
 "Language-Team: shop/plugins/fprview\n"
@@ -34,35 +34,35 @@ msgstr ""
 msgid "To the product"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:67
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:68
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
 msgid "//www.webasyst.com"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:67
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
 msgid "Give <b>feedback</b>"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:68
-msgid "Other <b>plugins</b><br /> from the developer"
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
+msgid "Other <b>products</b><br /> from the developer"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:69
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:36
 msgid "For all questions"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:72
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:39
 #: /wa-apps/shop/plugins/fprview/lib/config/plugin.php:3
 msgid "Fast product preview"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:75
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:42
 msgid ""
 "To output the «Fast Preview» link in shop frontend paste in the product "
 "template the following code"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:76
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:43
 msgid "as a method parameter it is necessary to specify the product id"
 msgstr ""
 
@@ -71,12 +71,18 @@ msgid "Status"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:12
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:24
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:34
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:118
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:153
 msgid "Off"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:13
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:23
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:33
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:154
 msgid "On"
 msgstr ""
 
@@ -88,16 +94,6 @@ msgstr ""
 msgid ""
 "FancyBox is a tool for displaying product content in modal window. If the "
 "FancyBox library is already loaded in your template, disable this setting."
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:23
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:33
-msgid "Enable"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:24
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:34
-msgid "Disable"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:28
@@ -151,7 +147,7 @@ msgid "Warning"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:59
-msgid "the link must have an attribute"
+msgid "the link must have attributes"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:62
@@ -191,28 +187,28 @@ msgid "Preview button background color on mouse hover"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
-msgid "Text color in plugin custom template"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:149
-msgid "Text color in the header and footer."
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:155
-msgid "Background color in plugin custom template"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:156
-msgid ""
-"Background color of the header and footer, color of content borders and "
-"product link."
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
 msgid "Links in new tab"
 msgstr ""
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:149
 msgid ""
 "Enable this setting if you want to open product links in a new browser tab."
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:158
+msgid "Text color in plugin custom template"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:159
+msgid "Text color in the header and footer."
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:165
+msgid "Background color in plugin custom template"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:166
+msgid ""
+"Background color of the header and footer, color of content borders and "
+"product link."
 msgstr ""

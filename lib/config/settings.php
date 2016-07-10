@@ -17,21 +17,21 @@ return array(
     'fancybox_status' => array(
         'title'        => _wp('FancyBox status'),
         'description'  => _wp('FancyBox is a tool for displaying product content in modal window. If the FancyBox library is already loaded in your template, disable this setting.'),
-        'value'        => 'enable',
+        'value'        => 'on',
         'control_type' => waHtmlControl::SELECT,
         'options'      => array(
-            'enable'  => _wp('Enable'),
-            'disable' => _wp('Disable'),
+            'on'  => _wp('On'),
+            'off' => _wp('Off'),
         ),
     ),
     'bxslider_status' => array(
         'title'        => _wp('BxSlider status'),
         'description'  => _wp('BxSlider is a content slider. Used within the template of plugin in the frontend to slide product images. If the BxSlider library is already loaded in your template disable this setting.'),
-        'value'        => 'enable',
+        'value'        => 'on',
         'control_type' => waHtmlControl::SELECT,
         'options'      => array(
-            'enable'  => _wp('Enable'),
-            'disable' => _wp('Disable'),
+            'on'  => _wp('On'),
+            'off' => _wp('Off'),
         ),
     ),
 
@@ -56,12 +56,12 @@ return array(
     'button_template' => array(
         'title'        => _wp('Preview button template'),
         'description'  => '<a id="button-template-get-origin" href="#">'. _wp('Template source code') .'</a>
-<p id="button-template-warning"><b>'. _wp('Warning') .'</b>: '. _wp('the link must have an attribute') .' <b>class="fprview-more-info"</b></p>
+<p id="button-template-warning"><b>'. _wp('Warning') .'</b>: '. _wp('the link must have attributes') .':<br /><b>href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}"</b><br /><b>class="fprview-more-info"</b></p>
 <br /><br />
 <p id="button-template-origin">
-&#060;a href="{$wa_url}fprview/?id={$product_id}" class="fprview-more-info"&#062;'. _wp('Fast Preview') .'&#060;/a&#062;
+&#060;a href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info"&#062;'. _wp('Fast Preview') .'&#060;/a&#062;
 </p>',
-        'value'        => '<a href="{$wa_url}fprview/?id={$product_id}" class="fprview-more-info">'. _wp('Fast Preview') .'</a>',
+        'value'        => '<a href="{$wa->getUrl(\'/frontend/fprview/\')}?id={$product_id}" class="fprview-more-info">'. _wp('Fast Preview') .'</a>',
         'control_type' => waHtmlControl::TEXTAREA,
     ),
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shop/plugins/fprview\n"
-"POT-Creation-Date: 2016-07-05 09:43+0300\n"
+"POT-Creation-Date: 2016-07-10 15:34+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: shop/plugins/fprview\n"
 "Language-Team: shop/plugins/fprview\n"
@@ -36,29 +36,29 @@ msgstr "Описание"
 msgid "To the product"
 msgstr "Перейти к товару"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:48
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:49
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
 msgid "//www.webasyst.com"
 msgstr "//www.webasyst.ru"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:48
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
 msgid "Give <b>feedback</b>"
 msgstr "Оставить <b>отзыв</b>"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:49
-msgid "Other <b>plugins</b><br /> from the developer"
-msgstr "Другие <b>плагины</b><br /> от разработчика"
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
+msgid "Other <b>products</b><br /> from the developer"
+msgstr "Другие <b>продукты</b><br /> от разработчика"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:50
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:36
 msgid "For all questions"
 msgstr "По всем вопросам"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:53
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:39
 #: /wa-apps/shop/plugins/fprview/lib/config/plugin.php:3
 msgid "Fast product preview"
 msgstr "Быстрый просмотр товара"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:75
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:42
 msgid ""
 "To output the «Fast Preview» link in shop frontend paste in the product "
 "template the following code"
@@ -66,7 +66,7 @@ msgstr ""
 "Для вывода ссылки «Быстрый просмотр» во фронтенде магазина вставьте в "
 "необходимое место шаблона следующий код"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:76
+#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:43
 msgid "as a method parameter it is necessary to specify the product id"
 msgstr "в качестве параметра метода обязательно нужно указать id товара"
 
@@ -75,12 +75,18 @@ msgid "Status"
 msgstr "Статус"
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:12
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:62
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:24
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:34
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:118
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:153
 msgid "Off"
 msgstr "Выключен"
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:13
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:63
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:23
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:33
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:154
 msgid "On"
 msgstr "Включен"
 
@@ -96,16 +102,6 @@ msgstr ""
 "FancyBox - это средство для отображения контента товара в модальном окне. "
 "Если библиотека FancyBox уже подключена в вашей теме дизайна, отключите "
 "данную настройку."
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:23
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:33
-msgid "Enable"
-msgstr "Включен"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:24
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:34
-msgid "Disable"
-msgstr "Выключен"
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:28
 msgid "BxSlider status"
@@ -151,10 +147,36 @@ msgid "If you chose «Theme standard template» fill the file name."
 msgstr "Если вы выбрали «Стандартный шаблон темы» укажите имя файла."
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:57
+msgid "Preview button template"
+msgstr "Шаблон кнопки предпросмотра"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:58
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:70
+msgid "Template source code"
+msgstr "Исходный код шаблона"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:59
+msgid "Warning"
+msgstr "Важно"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:59
+msgid "the link must have attributes"
+msgstr "у ссылки обязательно должны быть аттрибуты"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:62
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:64
+msgid "Fast Preview"
+msgstr "Быстрый просмотр"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:69
+msgid "Preview button style"
+msgstr "Стили кнопки предпросмотра"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:113
 msgid "Preview button hide"
 msgstr "Скрывать кнопку предпросмотра"
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:58
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:114
 msgid ""
 "If you want to have the preview button visible only when you hover the mouse "
 "over the product and for all the others remained hidden, enable this "
@@ -164,65 +186,21 @@ msgstr ""
 "мыши на товар, а для всех других оставалась скрытой, включите этот параметр. "
 "В противном случае кнопка отображается для всех товаров."
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:67
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:123
 msgid "Preview button text color"
 msgstr "Цвет текста кнопки предпросмотра"
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:73
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:129
 msgid "Preview button background color"
 msgstr "Цвет фона кнопки предпросмотра"
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:79
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:135
 msgid "Preview button text color on mouse hover"
 msgstr "Цвет текста кнопки предпросмотра при наведении мыши"
 
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:85
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:141
 msgid "Preview button background color on mouse hover"
 msgstr "Цвет фона кнопки предпросмотра при наведении мыши"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:92
-msgid "Text color in plugin custom template"
-msgstr "Цвет текста в шаблоне плагина"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:93
-msgid "Text color in the header and footer."
-msgstr "Цвет текста в хедере и футере."
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:99
-msgid "Background color in plugin custom template"
-msgstr "Цвет фона в шаблоне плагина"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:100
-msgid ""
-"Background color of the header and footer, color of content borders and "
-"product link."
-msgstr "Цвет фона хедера, футера, цвет рамок и ссылки на товар."
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:107
-msgid "Preview button template"
-msgstr "Шаблон кнопки предпросмотра"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:108
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:120
-msgid "Template source code"
-msgstr "Исходный код шаблона"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:109
-msgid "Warning"
-msgstr "Важно"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:109
-msgid "the link must have an attribute"
-msgstr "у ссылки обязательно должен быть аттрибут"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:112
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:114
-msgid "Fast Preview"
-msgstr "Быстрый просмотр"
-
-#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:119
-msgid "Preview button style"
-msgstr "Стили кнопки предпросмотра"
 
 #: /wa-apps/shop/plugins/fprview/lib/config/settings.php:148
 msgid "Links in new tab"
@@ -234,3 +212,21 @@ msgid ""
 msgstr ""
 "Включите эту настройку, если хотите, чтобы ссылки на товар открывались в "
 "новой вкладке браузера."
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:158
+msgid "Text color in plugin custom template"
+msgstr "Цвет текста в шаблоне плагина"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:159
+msgid "Text color in the header and footer."
+msgstr "Цвет текста в хедере и футере."
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:165
+msgid "Background color in plugin custom template"
+msgstr "Цвет фона в шаблоне плагина"
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:166
+msgid ""
+"Background color of the header and footer, color of content borders and "
+"product link."
+msgstr "Цвет фона хедера, футера, цвет рамок и ссылки на товар."
