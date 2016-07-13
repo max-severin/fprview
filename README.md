@@ -1,6 +1,6 @@
 # fprview - Fast product view
 
-![fprview-frontend](https://www.webasyst.com/wa-data/public/baza/products/img/16/2516/6939.970.png)
+![fprview-frontend](https://www.webasyst.com/wa-data/public/baza/products/img/16/2516/6978.970.png)
 
 ## Description
 Fast product view plugin for Shop-Script
@@ -10,7 +10,8 @@ The plugin gives customers the ability to quickly view information about a produ
 
 ## Installing
 ### Auto
-...
+Install plugin from webasyst store: [fprview-en](https://www.webasyst.com/store/plugin/shop/fprview/) or [fprview-ru](https://www.webasyst.ru/store/plugin/shop/fprview/).  
+Or you can install plugin from Installer app in backend.
 
 ### Manual
 1. Get the code into your web server's folder /PATH_TO_WEBASYST/wa-apps/shop/plugins

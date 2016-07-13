@@ -21,8 +21,8 @@
 
 .fprview-bottom { background: #{$fprview_settings.custom_template_background_color} none repeat scroll 0 0; float: left; height: 110px; margin: 30px 0 0; width: 100%; }
 .fprview-bottom .fprview-price-wrapper { text-align: center; }
-.fprview-bottom .compare-price { color: #{$fprview_settings.custom_template_color}; float: left; font-size: 18px; margin: -8px 0 0 0; text-decoration: line-through; }
-.fprview-bottom .price { color: #{$fprview_settings.custom_template_color}; float: left; font-size: 45px; font-weight: bold; margin: 0 0 0 10px; }
+.fprview-bottom .compare-price { color: #{$fprview_settings.custom_template_color}; float: left; font-size: 18px; margin: -8px 0 0 0; text-decoration: line-through; text-align: left; width: 100%; }
+.fprview-bottom .price { color: #{$fprview_settings.custom_template_color}; float: left; font-size: 45px; font-weight: bold; margin: 0 0 0 10px; text-align: left; width: 100%; }
 .fprview-bottom .product-link { border: 2px solid #{$fprview_settings.custom_template_color}; border-radius: 6px; color: #{$fprview_settings.custom_template_color}; display: block; float: right; font-size: 16px; font-weight: bold; height: 45px; line-height: 45px; margin: 30px 30px 0 0; text-align: center; text-decoration: none; width: 230px; transition: all 0.2s ease-in 0s; }
 .fprview-bottom .product-link:hover { font-size: 18px; height: 55px; line-height: 55px; margin: 25px 25px 0 0; width: 250px; }
 
