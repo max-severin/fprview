@@ -34,19 +34,6 @@ msgstr ""
 msgid "To the product"
 msgstr ""
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
-msgid "//www.webasyst.com"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
-msgid "Give <b>feedback</b>"
-msgstr ""
-
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
-msgid "Other <b>products</b><br /> from the developer"
-msgstr ""
-
 #: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:36
 msgid "For all questions"
 msgstr ""

@@ -36,19 +36,6 @@ msgstr "Описание"
 msgid "To the product"
 msgstr "Перейти к товару"
 
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
-msgid "//www.webasyst.com"
-msgstr "//www.webasyst.ru"
-
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:34
-msgid "Give <b>feedback</b>"
-msgstr "Оставить <b>отзыв</b>"
-
-#: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:35
-msgid "Other <b>products</b><br /> from the developer"
-msgstr "Другие <b>продукты</b><br /> от разработчика"
-
 #: /wa-apps/shop/plugins/fprview/templates/actions/settings/Settings.html:36
 msgid "For all questions"
 msgstr "По всем вопросам"
