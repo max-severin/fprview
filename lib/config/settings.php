@@ -77,6 +77,7 @@ return array(
     display: block;
     font-size: 1.1em;
     font-weight: normal;
+    height: auto;
     margin: 40% 10% 0;
     opacity: 0.7;
     padding: 10px 0;
@@ -84,6 +85,7 @@ return array(
     text-align: center;
     text-decoration: none;
     width: 80%;
+    z-index: 999;
   }
   .fprview-more-info:hover {
     opacity: 1;
@@ -98,6 +100,7 @@ return array(
     display: block;
     font-size: 1.1em;
     font-weight: normal;
+    height: auto;
     margin: 40% 10% 0;
     opacity: 0.7;
     padding: 10px 0;
@@ -105,6 +108,7 @@ return array(
     text-align: center;
     text-decoration: none;
     width: 80%;
+    z-index: 999;
 }
 .fprview-more-info:hover {
     opacity: 1;

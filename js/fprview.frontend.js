@@ -32,10 +32,10 @@ var fprviewFrontend = (function () { "use strict";
 
 		{if isset($fprview_settings.button_hide) && $fprview_settings.button_hide === 'on'}
 	    $('.fprview-more-info').parent().mouseenter(function () {
-	    	$(this).find('.fprview-more-info').show();
+	    	$(this).find('.fprview-more-info').css('display', 'block');
 	    });
 	    $('.fprview-more-info').parent().mouseleave(function () {
-	    	$(this).find('.fprview-more-info').hide();
+	    	$(this).find('.fprview-more-info').css('display', 'none');
 	    });
 	    {/if}
 
