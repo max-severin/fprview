@@ -8,6 +8,7 @@
 
 .fprview-left { float: left; margin: 30px 0 0 30px; width: 260px; }
 .fprview-left .product-images { height: auto; width: 240px; }
+.fprview-left .product-images img { width: 100%; }
 .fprview-left .product-link { color: #777; float: left; line-height: 35px; text-align: center; width: 100%; }
 .fprview-left .product-link { margin: 15px 0 0; }
 .fprview-left .product-link a { color: #{$fprview_settings.custom_template_background_color}; text-decoration: underline; }
@@ -25,6 +26,8 @@
 .fprview-bottom .price { color: #{$fprview_settings.custom_template_color}; float: left; font-size: 45px; font-weight: bold; margin: 0 0 0 10px; text-align: left; width: 100%; }
 .fprview-bottom .product-link { border: 2px solid #{$fprview_settings.custom_template_color}; border-radius: 6px; color: #{$fprview_settings.custom_template_color}; display: block; float: right; font-size: 16px; font-weight: bold; height: 45px; line-height: 45px; margin: 30px 30px 0 0; text-align: center; text-decoration: none; width: 230px; transition: all 0.2s ease-in 0s; }
 .fprview-bottom .product-link:hover { font-size: 18px; height: 55px; line-height: 55px; margin: 25px 25px 0 0; width: 250px; }
+
+.fprview-bottom .fprview-left { width: 300px; }
 
 .bx-wrapper { position: relative; margin: 0 auto 20px; padding: 0; *zoom: 1; }
 .bx-wrapper .bx-viewport { box-shadow: none; }
