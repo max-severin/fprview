@@ -39,3 +39,28 @@
 .bx-wrapper .bx-controls-direction a { height: 31px; width: 32px; }
 
 .bx-wrapper img { margin: 0 auto; }
+
+@media (min-width:320px) and (max-width: 600px) {
+	.fprview-right { float: left; margin: 30px 10px 0; width: 80%; }
+	.fprview-bottom .product-link { display: none; }
+}
+@media (min-width: 601px) and (max-width: 820px) {
+	.fprview-right { float: left; margin: 30px 30px 0; width: 80%; }
+	.fprview-bottom .product-link { display: none; }
+}
+@media (min-width: 821px) and (max-width: 1024px) {
+	.fprview-right { float: left; margin: 30px 30px 0; width: 90%; }
+	.fprview-bottom .product-link { font-size: 12px; margin: 30px 10px 0 0; width: 120px; }
+	.fprview-bottom .product-link:hover { font-size: 13px; margin: 25px 10px 0 0; width: 120px; }
+}
+@media (min-width: 1025px) and (max-width: 1180px) {	
+	.fprview-right { width: 260px; }
+	.fprview-bottom .product-link { width: 170px; }
+	.fprview-bottom .product-link:hover { width: 170px; }
+}
+@media (min-width: 1181px) and (max-width: 1300px) {	
+	.fprview-right { width: 320px; }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {	
+	.fprview-right { width: 420px; }
+}
