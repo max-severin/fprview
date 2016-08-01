@@ -199,3 +199,13 @@ msgid ""
 "Background color of the header and footer, color of content borders and "
 "product link."
 msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:181
+msgid "Thumbnail size"
+msgstr ""
+
+#: /wa-apps/shop/plugins/fprview/lib/config/settings.php:182
+msgid ""
+"Specify the thumbnail size of a product image that will be displayed in the "
+"plugin custom template."
+msgstr ""

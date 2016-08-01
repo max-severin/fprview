@@ -19,13 +19,13 @@
 		<div class="product-images">
 			<ul class="bxslider">
   				<li>
-                    {$wa->shop->productImgHtml($product, '300x300', [ 'itemprop' => 'image', 'id' => 'product-image', 'alt' => $product.name|escape|cat:' ':strip_tags($product.summary)|escape ])}
+                    {$wa->shop->productImgHtml($product, $fprview_settings.template_thumbnail_size, [ 'itemprop' => 'image', 'id' => 'product-image', 'alt' => $product.name|escape|cat:' ':strip_tags($product.summary)|escape ])}
                 </li>
 				{if count($product.images) > 1}
                     {foreach $product.images as $image}
                     	{if $image.id != $product.image_id}
 	                        <li>
-	                        	{$wa->shop->productImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext, 'image_desc' => $image.description], '300x300', ['alt' => $product.name|cat:' - ':$image.description|escape])}
+	                        	{$wa->shop->productImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext, 'image_desc' => $image.description], $fprview_settings.template_thumbnail_size, ['alt' => $product.name|cat:' - ':$image.description|escape])}
 	                        </li>
                         {/if}
                     {/foreach}

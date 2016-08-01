@@ -4,7 +4,7 @@ return array(
     'description' => '',
     'img' => 'img/fprview.png',
     'vendor' => 1020720,
-    'version' => '1.1.2',
+    'version' => '1.1.3',
     'shop_settings' => true,
     'frontend' => true,
     'handlers' => array(

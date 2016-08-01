@@ -176,4 +176,12 @@ return array(
         'value'        => '21a6de',
         'control_type' => waHtmlControl::CUSTOM.' '.'shopFprviewPlugin::settingColorControl',
     ),
+
+    'template_thumbnail_size' => array(
+        'title'        => _wp('Thumbnail size'),
+        'description'  => _wp('Specify the thumbnail size of a product image that will be displayed in the plugin custom template.'),
+        'placeholder'  => '300x300',
+        'value'        => '300x300',
+        'control_type' => waHtmlControl::INPUT,
+    ),
 );
