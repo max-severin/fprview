@@ -19,6 +19,8 @@
 .fprview-right .product-info-tab.active { height: 33px; font-weight: bold; margin: 0 2px -1px 0; }
 .fprview-right .product-info-block { background: #fafafa none repeat scroll 0 0; border: 1px solid #{$fprview_settings.custom_template_background_color}; box-sizing: border-box; display: none; float: left; padding: 10px 20px; width: 100%; }
 .fprview-right .product-info-block.active { display: block; }
+.fprview-right #product-features { width: 100%; }
+.fprview-right #product-features td.name { min-width: 50%; padding-right: 5%; }
 
 .fprview-bottom { background: #{$fprview_settings.custom_template_background_color} none repeat scroll 0 0; float: left; height: 110px; margin: 30px 0 0; width: 100%; }
 .fprview-bottom .fprview-price-wrapper { text-align: center; }
