@@ -20,15 +20,6 @@ jQuery.fn.extend({
 
             var parent = node.parent();
 
-            var sameTagSiblings = parent.children(name);
-            if (sameTagSiblings.length > 1) { 
-                allSiblings = parent.children();
-                var index = allSiblings.index(realNode) + 1;
-                if (index > 1) {
-                    name += ':nth-child(' + index + ')';
-                }
-            }
-
             path = name + (path ? '>' + path : '');
             node = parent;
         }
@@ -67,12 +58,18 @@ var fprviewFrontend = (function () { "use strict";
 		{if isset($fprview_settings.button_hide) && $fprview_settings.button_hide === 'on'}
 		var viewButtonClass = '.fprview-more-info',
 	 		viewButtonParent = $(viewButtonClass).parent();
-
+console.log(viewButtonParent.getSelectorPath());
 	    $(document).on('mouseenter', viewButtonParent.getSelectorPath(), function () {
-	    	$(this).find(viewButtonClass).css('display', 'block');
+	    	var viewButton = $(this).find(viewButtonClass);
+	    	if (viewButton) {
+	    		viewButton.css('display', 'block');
+	    	}
 	    });
 	    $(document).on('mouseleave', viewButtonParent.getSelectorPath(), function () {
-	    	$(this).find(viewButtonClass).css('display', 'none');
+	    	var viewButton = $(this).find(viewButtonClass);
+	    	if (viewButton) {
+	    		viewButton.css('display', 'none');
+	    	}
 	    });
 	    {/if}
 
