@@ -233,6 +233,14 @@ class shopFprviewPluginFrontendFprviewController extends shopFrontendAction {
         return array($services, $skus_services);
     }
 
+    protected function getPrice($price, $currency, $product_price, $product_currency) {
+        if ($currency == '%') {
+            return shop_currency($price * $product_price / 100, $product_currency, null, 0);
+        } else {
+            return shop_currency($price, $currency, null, 0);
+        }
+    }
+
     protected function getCurrencyInfo() {
         $currency = waCurrency::getInfo($this->getConfig()->getCurrency(false));
         $locale = waLocale::getInfo(wa()->getLocale());
