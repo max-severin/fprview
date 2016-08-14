@@ -57,6 +57,7 @@
                 <div class="product-info-block active">
                     <table class="features" id="product-features">
                         {foreach $product.features as $f_code => $f_value}
+                        {if !(isset($features[$f_code].status) && $features[$f_code].status == 'private')}
                             <tr {if $features[$f_code].type == 'divider'}class="divider"{/if}>
                                 <td class="name">
                                     <strong>{$features[$f_code].name|escape}</strong>
@@ -73,6 +74,7 @@
                                     {/if}
                                 </td>
                             </tr>
+                        {/if}
                         {/foreach}
                     </table>
                 </div>
