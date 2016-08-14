@@ -61,13 +61,14 @@ class shopFprviewPluginFrontendFprviewController extends shopFrontendAction {
 
                     $compare = waRequest::cookie('shop_compare', array(), waRequest::TYPE_ARRAY_INT);
 
+                    $stock_model = new shopStockModel();
+
                     $view->assign(array(
                         'sku_services'  => $skus_services,
                         'services'      => $services,
                         'compare'       => in_array($product['id'], $compare) ? $compare : array(),
                         'currency_info' => $this->getCurrencyInfo(),
-                        'stocks'        => shopHelper::getStocks(true),
-
+                        'stocks'        => $stock_model->getAll('id'),
                         'reviews'              => $this->getTopReviews($product['id']),
                         'rates'                => $this->reviews_model->getProductRates($product['id']),
                         'reviews_total_count'  => $this->getReviewsTotalCount($product['id']),
