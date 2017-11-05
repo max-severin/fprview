@@ -45,7 +45,7 @@
                 </div>   
             {/if}           
             {if $product.description}
-                <div class="product-info-tab">
+                <div class="product-info-tab {if !$product.features}active{/if}">
                     [`Description`]
                 </div>                    
             {/if}
@@ -80,7 +80,7 @@
                 </div>
             {/if}             
             {if $product.description}
-                <div class="product-info-block">     
+                <div class="product-info-block {if !$product.features}active{/if}">     
                     <div class="description" id="product-description" itemprop="description">{$product.description}</div>
                 </div>
             {/if}
